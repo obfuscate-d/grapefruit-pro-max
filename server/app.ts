@@ -7,11 +7,16 @@ import send from 'koa-send'
 
 import * as fs from 'fs'
 import * as path from 'path'
+import { fileURLToPath } from 'url'
 import * as frida from 'frida'
 
-import * as serialize from './lib/serialize'
-import * as transfer from './lib/transfer'
-import Channels from './lib/channels'
+// ESM equivalent of __dirname
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
+import * as serialize from './lib/serialize.js'
+import * as transfer from './lib/transfer.js'
+import Channels from './lib/channels.js'
 
 import { exec } from 'child_process'
 import { createServer } from 'http'
@@ -19,8 +24,8 @@ import { program } from 'commander'
 import { AddressInfo } from 'net'
 import { randomBytes } from 'crypto'
 
-import { wrap, tryGetDevice } from './lib/device'
-import { concat } from './lib/workspace'
+import { wrap, tryGetDevice } from './lib/device.js'
+import { concat } from './lib/workspace.js'
 import { Scope } from 'frida'
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type

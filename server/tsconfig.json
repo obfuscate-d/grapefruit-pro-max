@@ -6,7 +6,8 @@
             "es2017"
         ],
         "target": "es2017",
-        "module": "commonjs",
+        "module": "esnext",
+        "moduleResolution": "node",
         "declaration": true,
         "outDir": "./dist",
         "typeRoots": [

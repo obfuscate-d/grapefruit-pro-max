@@ -20,6 +20,7 @@
   },
   "private": "true",
   "name": "grapefruit-server",
+  "type": "module",
   "main": "dist/app.js",
   "directories": {
     "lib": "lib"

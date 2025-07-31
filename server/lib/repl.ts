@@ -1,8 +1,13 @@
 import { EventEmitter } from 'events'
 import { promises as fs } from 'fs'
+import { fileURLToPath } from 'url'
 
 import { Session, Script, MessageType } from 'frida'
 import path from 'path'
+
+// ESM equivalent of __dirname
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 type status = 'ok' | 'failed'
 

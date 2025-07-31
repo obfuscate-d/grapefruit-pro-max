@@ -4,10 +4,10 @@ import http from 'http'
 import { timingSafeEqual } from 'crypto'
 
 import { Server, Namespace, Socket } from 'socket.io'
-import REPL from './repl'
-import * as transfer from './transfer'
-import { wrap, tryGetDevice } from './device'
-import { connect, proxy } from './rpc'
+import REPL from './repl.js'
+import * as transfer from './transfer.js'
+import { wrap, tryGetDevice } from './device.js'
+import { connect, proxy } from './rpc.js'
 
 import { MessageType } from 'frida'
 

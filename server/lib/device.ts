@@ -1,8 +1,8 @@
-import { AppNotFoundError, EarlyInstrumentError, DeviceNotFoundError, InvalidDeviceError, VersionMismatchError } from './error'
+import { AppNotFoundError, EarlyInstrumentError, DeviceNotFoundError, InvalidDeviceError, VersionMismatchError } from './error.js'
 import { Device, Session, enumerateDevices, getUsbDevice, getDevice } from 'frida'
-import { retry } from './utils'
+import { retry } from './utils.js'
 
-import * as serialize from './serialize'
+import * as serialize from './serialize.js'
 import { DeviceType } from 'frida'
 
 export async function match(prefix: string): Promise<Device> {
