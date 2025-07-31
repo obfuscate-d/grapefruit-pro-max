@@ -1,0 +1,25 @@
+{
+  "name": "grapefruit-agent",
+  "description": "",
+  "private": true,
+  "main": "dist.js",
+  "scripts": {
+    "prepare": "npm run preprocessor && npm run build",
+    "build": "frida-compile src/index.ts -o dist.js -c",
+    "watch": "npm run build -- -w",
+    "preprocessor": "node scripts/preprocessor.js"
+  },
+  "files": [
+    "dist.js",
+    "eval.js",
+    "system-wide"
+  ],
+  "devDependencies": {
+    "@types/frida-gum": "^19.0.0",
+    "@types/node": "^22.15.21",
+    "frida-compile": "^17.0.0"
+  },
+  "dependencies": {
+    "frida-objc-bridge": "^8.0.4"
+  }
+}

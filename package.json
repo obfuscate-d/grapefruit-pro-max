@@ -1,0 +1,51 @@
+{
+  "name": "igf",
+  "version": "0.13.1",
+  "description": "Runtime Application Instruments for iOS",
+  "main": "index.js",
+  "dependencies": {
+    "@types/frida-gum": "^19.0.0",
+    "bplist-creator": "0.0.8",
+    "bplist-parser": "^0.2.0",
+    "commander": "^6.0.0",
+    "frida": "^17.0.1",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^13.0.1",
+    "koa-send": "^5.0.0",
+    "plist": "^3.0.1",
+    "socket.io": "^4.3.1"
+  },
+  "scripts": {
+    "postinstall": "node scripts/install.js",
+    "postuninstall": "node server/dist/scripts/cleanup.js",
+    "prepublishOnly": "node scripts/prepublish.js",
+    "dev": "node scripts/dev.js",
+    "test": "node scripts/test.js"
+  },
+  "files": [
+    "server/bin",
+    "server/dist",
+    "server/templates",
+    "gui/dist",
+    "scripts",
+    "agent/system-wide",
+    "agent/dist.js",
+    "agent/eval.js"
+  ],
+  "bin": {
+    "igf": "bin/igf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChiChou/Grapefruit.git"
+  },
+  "author": "CodeColorist",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChiChou/Grapefruit/issues"
+  },
+  "homepage": "https://github.com/ChiChou/Grapefruit#readme"
+}

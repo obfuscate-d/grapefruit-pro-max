@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "eslint.lintTask.options": "app.ts lib/**/*.ts tests/**/*.ts",
+  "eslint.run": "onSave",
+  "eslint.workingDirectories": [
+    "server/"
+  ],
+  "search.exclude": {
+    "gui/bulmaswatch": true
+  },
+  "javascript.implicitProjectConfig.experimentalDecorators": true
+}
