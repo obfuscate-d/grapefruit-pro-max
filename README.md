@@ -13,8 +13,8 @@
 ## 🚀 Quick Start (Zero Configuration)
 
 ```bash
-git clone https://github.com/ChiChou/Grapefruit.git
-cd Grapefruit
+git clone https://github.com/obfuscate-d/grapefruit-pro-max.git
+cd grapefruit-pro-max
 ./grapefruit.sh
 ```
 
@@ -83,6 +83,14 @@ For traditional npm installation: `npm install -g igf`
 ## Security Warning
 
 Grapefruit has no authentication. Limit access to `localhost` and trusted networks only.
+
+## Credits & Attribution
+
+This is an enhanced fork of [Grapefruit](https://github.com/ChiChou/Grapefruit) by CodeColorist, with additional fixes and automation for Node.js 18+ compatibility and team distribution.
+
+**Original Project:** [ChiChou/Grapefruit](https://github.com/ChiChou/Grapefruit)  
+**License:** MIT License  
+**Enhancements:** ESM compatibility, automated setup script, Node.js 18+ support
 
 ## Links
 
